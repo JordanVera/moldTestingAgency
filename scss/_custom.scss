@@ -1,0 +1,467 @@
+/* Global Sass Variables */
+$white: 		#ffffff;
+$black: 			#020202;
+$vividRed: 		#da2127;
+$grey: 			#b8b8b8;
+$lightGrey: 		#f0f0f0;
+$darkGrey: 		#707070;
+$blue:			#1779ba;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto');
+
+* {
+	font-family: 'PT Serif', serif;
+}
+
+p {
+	line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	 font-family: 'Roboto', sans-serif;
+}
+
+/* Global Classes */
+.vividRed {
+	color: $vividRed;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: $white;
+}
+
+.roboto {
+	 font-family: 'Roboto', sans-serif;
+}
+
+.marginAuto {
+	margin: auto;
+}
+
+#map {
+	height: 24rem;
+	width: 100%;
+}
+
+.mb-1rem {
+	margin-bottom: 1rem;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.price {
+	font-family: 'Roboto', sans-serif;
+	margin-left: auto;
+}
+
+.tiny {
+	font-size: .7rem;
+}
+
+/* Navigation */
+.shrink {
+	padding: 22px 0;
+	transform: scale(0.9);
+	transition: all 0.4s ease-in-out;
+}
+
+.scaleImage {
+	width: 160px;
+}
+
+.bg {
+  opacity: 1;
+}
+
+.show {
+  opacity: 0.8;
+}
+
+.transition {    
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+
+nav {
+		background: $blue;
+		padding: 30px 0;
+		
+	h5 {
+		font-size: 1rem;
+	}
+	
+	img {
+		height: 54px;
+		/*transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;*/
+	}
+	
+	.title-bar {
+		background: $blue;
+		button {
+			color: $white;
+		}
+		
+		.title-bar-title {
+			color: $white;
+		}
+	}
+	
+	.top-bar {
+		background: $blue;
+	}
+	
+	.dropdown {
+		background: $blue;
+	}
+	
+	a {
+		color: $white;
+	}
+	
+	.dropdown {
+		a:hover {
+			color: $white;
+			background: $vividRed;
+			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+			-webkit-transition: all 0.6s ease-in-out;
+			-moz-transition: all 0.6s ease-in-out;
+			-o-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
+		}
+	}
+}
+
+/* Banner */
+
+#banner {
+	
+	position: relative;
+	
+	#bannerVideo {
+		min-width: 100%;
+		min-height: 100%;
+	}
+	
+	h2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $white;
+		background: rgba(23,121,186,0.5);
+		border-radius: 2rem;
+		padding: 1rem 2rem;
+	}
+	
+	h3 {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: $white;
+		color: $blue;
+		padding: 1rem 1.2rem;
+		border-radius: 100px;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+}
+
+.card {
+	border-radius: 1rem;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.label {
+	background: $vividRed;
+	font-size: .7rem;
+}
+
+#submitForm {
+	background: $vividRed;
+}
+
+.card-divider {
+	background: $vividRed;
+	color: $white;
+	font-variant: small-caps;
+}
+
+/* facts */
+#facts {
+	margin-top: 2.6rem;
+	
+	.cell {
+		padding: 2rem 1rem;
+		text-align: center;
+		background: $blue;
+		color: $white;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		border: none;
+		
+		i {
+			margin-bottom: 1rem;
+			color: $white;
+		}
+	}
+}
+
+
+/* companyInfo */
+#companyInfo {
+	margin-top: 2.8rem;
+	text-align: center;
+}
+
+/* Call to Action */
+#callToAction {
+	background: $vividRed;
+	text-align: center;
+	color: $white;
+	padding: 1.6rem 0;
+	position: relative;
+	
+	h3 {
+		font-weight: bold;
+	}
+	
+	.button {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $blue;
+		background: $white;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		border-radius: 100px;
+	}
+}
+
+/* Cards*/
+#cards {
+	.card {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+	
+	i {
+		margin: auto;
+		color: $vividRed;
+		margin-left: .4rem;
+	}
+}
+
+
+/* Services Offered */
+
+#servicesOffered {
+	margin-top: 3.6rem;
+	
+	.card {
+		text-align: center;
+	}
+}
+
+/* Location */
+
+#contact {
+	padding: 2.6rem 2rem;
+	
+	textarea {
+		height: 8rem;
+	}
+}
+
+/* Footer */
+footer {
+	background: $blue;
+	color: $white;
+	text-align: center;
+	padding: 1rem;
+	
+	a {
+		color: $white;
+	}
+}
+
+/* BEGIN about.html
+____________________________________________________ */
+ #about {
+ 	margin-top: 2rem;
+ 	
+ 	.card {
+ 		border-radius: 1rem;
+ 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);		
+ 	}
+ 	
+ 	.label {
+ 		background: $vividRed;
+ 		font-size: .7rem;
+ 	}
+ 	
+ 	#submit {
+ 		background: $vividRed;
+ 	}
+ 	
+ 	.card-divider {
+ 		background: $vividRed;
+ 		color: $white;
+ 		font-variant: small-caps;
+ 	}
+ 	
+ 	#submitForm {
+ 		background: $vividRed;
+ 	}
+ 	
+ 	textarea {
+ 		height: 12rem;
+ 	}
+ 	
+ 	h2 {
+ 		font-size: 2rem;
+ 	}
+ 	
+ 	h4 {
+ 		font-size: 1.8rem;
+ 	}
+ 	
+ }
+
+
+/* BEGIN services.html
+____________________________________________________ */
+
+#services {
+	margin-top: 2rem;
+	
+	.card {
+		border-radius: 1rem;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+	
+	.label {
+		background: $vividRed;
+		font-size: .7rem;
+	}
+	
+	#submitForm {
+		background: $vividRed;
+	}
+	
+	.card-divider {
+		background: $vividRed;
+		color: $white;
+		font-variant: small-caps;
+	}
+	
+	.notice {
+		font-size: .8rem;
+		color: $vividRed;
+	}
+	
+	h5 {
+		margin-left: 1.8rem;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+	
+	h4 {
+		font-size: 1.8rem;
+	}
+	
+	ul {
+		margin-left: 3rem;
+	}
+	
+	li {
+		font-family: 'Roboto', sans-serif;
+		text-transform: capitalize;
+	}
+	
+	textarea {
+		height: 12rem;
+	}
+	
+}
+
+/* BEGIN faq.html
+____________________________________________________ */
+
+#faq {
+	margin-top: 2rem;
+	
+	.card {
+		border-radius: 1rem;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+	
+	.label {
+		background: $vividRed;
+		font-size: .7rem;
+	}
+	
+	#submitForm {
+		background: $vividRed;
+	}
+	
+	.card-divider {
+		background: $vividRed;
+		color: $white;
+		font-variant: small-caps;
+	}
+	
+	.accordion-title {
+		span {
+			font-family: 'Roboto', sans-serif;
+			color: $black;
+		}
+	}
+	
+	#google {
+		 margin-top: 2rem;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
