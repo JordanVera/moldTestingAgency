@@ -48,6 +48,7 @@ body {
 #map {
 	height: 24rem;
 	width: 100%;
+	border-radius: 1rem;
 }
 
 .mb-1rem {
@@ -103,9 +104,9 @@ nav {
 	
 	img {
 		height: 54px;
-		/*transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
 		-webkit-transition: all 0.4s ease-in-out;
-		-moz-transition: all 0.4s ease-in-out;*/
+		-moz-transition: all 0.4s ease-in-out;
 	}
 	
 	.title-bar {
@@ -199,6 +200,19 @@ nav {
 	font-variant: small-caps;
 }
 
+/* abstract */
+#abstract {
+	padding-top: 1.2rem;
+	
+	.button {
+		background: $vividRed;
+	}
+	
+	img {
+		width: 100%;
+	}
+}
+
 /* facts */
 #facts {
 	margin-top: 2.6rem;
@@ -216,6 +230,24 @@ nav {
 			color: $white;
 		}
 	}
+}
+
+/* accordian */
+
+#accordian {
+	margin-top: 2rem;
+	
+	.accordion-title {
+		background: $grey;
+		border: 1px solid $white;
+		
+		
+		span {
+			font-family: 'Roboto', sans-serif;
+			color: $white;
+		}
+	}
+	
 }
 
 
@@ -397,44 +429,7 @@ ____________________________________________________ */
 	
 }
 
-/* BEGIN faq.html
-____________________________________________________ */
 
-#faq {
-	margin-top: 2rem;
-	
-	.card {
-		border-radius: 1rem;
-		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	}
-	
-	.label {
-		background: $vividRed;
-		font-size: .7rem;
-	}
-	
-	#submitForm {
-		background: $vividRed;
-	}
-	
-	.card-divider {
-		background: $vividRed;
-		color: $white;
-		font-variant: small-caps;
-	}
-	
-	.accordion-title {
-		span {
-			font-family: 'Roboto', sans-serif;
-			color: $black;
-		}
-	}
-	
-	#google {
-		 margin-top: 2rem;
-	}
-	
-}
 
 
 

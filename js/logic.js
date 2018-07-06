@@ -8,7 +8,7 @@ function initMap() {
 	
 	var map = new google.maps.Map(document.getElementById('map'), options)
 	
-	const serviceArea = [
+	const houston = [
 		{lat: 29.035821, lng: -95.275498},
 		{lat: 29.780502, lng: -95.953527},
 		{lat: 30.364618, lng: -95.542913},
@@ -40,7 +40,7 @@ function initMap() {
 	];
 	
 	let polygon = new google.maps.Polygon({
-	          paths: serviceArea,
+	          paths: houston,
 	          strokeColor: '#FF0000',
 	          strokeOpacity: 0.4,
 	          strokeWeight: 2,
