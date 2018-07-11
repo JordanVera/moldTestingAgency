@@ -46,7 +46,7 @@
 	</div>
 	
 	<div id="banner">
-		<video id="bannerVideo" controls="controls" name="Video Name" src="./media/moldBanner.mp4" autoplay loop muted></video>
+		<video id="bannerVideo" controls="controls" name="Video Name" src="./media/moldBanner.mp4" autoplay loop muted playsinline></video>
 		
 		<h2 class="text-center">Antigen Mold Consulting</h2>
 		
@@ -403,6 +403,13 @@
 							<label for="phoneNumber" class="label">Phone Number:</label>
 							
 							<input  id="phoneNumber" type="text" placeholder="Your Name">
+							
+							<label for="methodOfContact" class="label">Preferred Contact Method:</label>
+							<select id="methodOfContact">
+							    <option value="husker">Phone</option>
+							    <option value="starbuck">Email</option>
+							    <option value="hotdog">Text Message</option>
+							 </select>
 							
 							<label for="directMessage" class="label">Direct Message:</label>
 							
