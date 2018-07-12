@@ -4,7 +4,8 @@
   "description": "Basic template for a new Foundation for Sites project.",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+	"build":"gulp sass"
   },
   "engines":{
   	"node": "8.11.3" 

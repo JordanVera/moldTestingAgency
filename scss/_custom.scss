@@ -157,6 +157,7 @@ nav {
 	
 	#bannerVideo {
 		min-width: 100%;
+		max-width: 100vw;
 		min-height: 100%;
 	}
 	
@@ -207,6 +208,7 @@ nav {
 /* abstract */
 #abstract {
 	padding-top: 1.2rem;
+	margin-bottom: 1.4rem;
 	
 	.button {
 		background: $vividRed;
@@ -433,33 +435,16 @@ ____________________________________________________ */
 	
 }
 
+/* contact.html */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#contactAntigen {
+	margin: 2rem 0;
+	
+	.callout {
+		background: $lightGrey;
+		border-radius: 1rem;
+	}
+}
 
 
 
